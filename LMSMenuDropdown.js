@@ -1,6 +1,22 @@
 //You will need javascript chrome extension for this to function.
 //https://chrome.google.com/webstore/detail/javascript-injector/knmnopfmccchnnfdoiddbihbcboeedll?hl=en
 
+/*
+All menus are collapsed by default 
+
+
+To unhide comment out lines similar to: 
+FEPMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
+
+OR 
+
+Comment out entire sections wrapped similar to:
+
+//2022-05-Front End Program - Begin
+...ex code here...
+//2022-05-Front End Program - End
+*/
+
 //2022-05-Front End Program - Begin
 // Career Services Assignment 1 - LinkedIn Setup
 let FEPMenuItem1 = document.getElementById("cmid2938");
