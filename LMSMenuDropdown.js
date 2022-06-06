@@ -262,3 +262,9 @@ RTQ1MenuItem8.classList.add("block_grade_me_hide"); //hides the menu item
 let RTQ1MenuItem9 = document.getElementById("cmid1341");
 RTQ1MenuItem9.classList.add("block_grade_me_hide"); //hides the menu item
 //RT-Q1-2022 - End
+
+//Orientation FE - Begin
+//Week 0 Career Services Assignment
+let OFEMenuItem1 = document.getElementById("cmid1743");
+OFEMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
+//Orintation FE - End
