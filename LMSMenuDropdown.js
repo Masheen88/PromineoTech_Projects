@@ -21,19 +21,15 @@ Comment out entire sections wrapped similar to:
 // Career Services Assignment 1 - LinkedIn Setup
 let FEPMenuItem1 = document.getElementById("cmid2938");
 FEPMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Career Services Assignment 1.5 - Github Profile
 let FEPMenuItem2 = document.getElementById("cmid2956");
 FEPMenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Career Services Assignment 2 - Tell Me About Yourself
 let FEPMenuItem3 = document.getElementById("cmid2974");
 FEPMenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 1 Research
 let FEPMenuItem4 = document.getElementById("cmid2937");
 FEPMenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 2 Research
 let FEPMenuItem5 = document.getElementById("cmid2955");
 FEPMenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
@@ -43,19 +39,15 @@ FEPMenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
 // Week 1 Quiz
 let FETMenuItem1 = document.getElementById("cmid60");
 FETMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 2 Quiz
 let FETMenuItem2 = document.getElementById("cmid71");
 FETMenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 3 Quiz
 let FETMenuItem3 = document.getElementById("cmid81");
 FETMenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 4 Quiz
 let FETMenuItem4 = document.getElementById("cmid93");
 FETMenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 5 Quiz
 let FETMenuItem5 = document.getElementById("cmid103");
 FETMenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
@@ -65,19 +57,15 @@ FETMenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
 // Week 7 Coding Assignment
 let FETQ1MenuItem1 = document.getElementById("cmid1235");
 FETQ1MenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 8 Coding Assignment
 let FETQ1MenuItem2 = document.getElementById("cmid1246");
 FETQ1MenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 9 Coding Assignment
 let FETQ1MenuItem3 = document.getElementById("cmid1257");
 FETQ1MenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 10 Coding Assignment
 let FETQ1MenuItem4 = document.getElementById("cmid1269");
 FETQ1MenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 11 Coding Assignment
 let FETQ1MenuItem5 = document.getElementById("cmid1279");
 FETQ1MenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
@@ -165,11 +153,9 @@ MySQLMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
 // Week 7 Coding Assignment
 let MySQLQ1MenuItem1 = document.getElementById("cmid1563");
 MySQLQ1MenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 11 Coding Assignment
 let MySQLQ1MenuItem2 = document.getElementById("cmid1612");
 MySQLQ1MenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Final Coding Project
 let MySQLQ1MenuItem3 = document.getElementById("cmid1620");
 MySQLQ1MenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
@@ -185,15 +171,12 @@ SBMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
 //Week 14 Coding Assignment
 let SBQ1MenuItem1 = document.getElementById("cmid1507");
 SBQ1MenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 15 Coding Assignment
 let SBQ1MenuItem2 = document.getElementById("cmid1518");
 SBQ1MenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 16 Coding Assignment
 let SBQ1MenuItem3 = document.getElementById("cmid1531");
 SBQ1MenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Career Services Assignment 8 - Apply for Jobs
 let SBQ1MenuItem4 = document.getElementById("cmid1521");
 SBQ1MenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
@@ -203,23 +186,18 @@ SBQ1MenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
 //Week 3 Coding Assignment
 let ReactMenuItem1 = document.getElementById("cmid25");
 ReactMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Final Project
 let ReactMenuItem2 = document.getElementById("cmid35");
 ReactMenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 5 Career Services Assignment 9 - React Flash Cards
 let ReactMenuItem3 = document.getElementById("cmid44");
 ReactMenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 3 Research
 let ReactMenuItem4 = document.getElementById("cmid24");
 ReactMenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 4 Research
 let ReactMenuItem5 = document.getElementById("cmid34");
 ReactMenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 5 Research
 let ReactMenuItem6 = document.getElementById("cmid42");
 ReactMenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
@@ -229,35 +207,27 @@ ReactMenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
 //Week 13 Coding Assignment
 let RTQ1MenuItem1 = document.getElementById("cmid1300");
 RTQ1MenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 14 Coding Assignment
 let RTQ1MenuItem2 = document.getElementById("cmid1310");
 RTQ1MenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 15 Coding Assignment
 let RTQ1MenuItem3 = document.getElementById("cmid1320");
 RTQ1MenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Final Project
 let RTQ1MenuItem4 = document.getElementById("cmid1331");
 RTQ1MenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 13 Career Services Assignment 7 - Resume
 let RTQ1MenuItem5 = document.getElementById("cmid1303");
 RTQ1MenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 17 Career Services Assignment 9 - React Flash Cards
 let RTQ1MenuItem6 = document.getElementById("cmid1343");
 RTQ1MenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 15 Research
 let RTQ1MenuItem7 = document.getElementById("cmid1321");
 RTQ1MenuItem7.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 16 Research
 let RTQ1MenuItem8 = document.getElementById("cmid1332");
 RTQ1MenuItem8.classList.add("block_grade_me_hide"); //hides the menu item
-
 //Week 17 Research
 let RTQ1MenuItem9 = document.getElementById("cmid1341");
 RTQ1MenuItem9.classList.add("block_grade_me_hide"); //hides the menu item
