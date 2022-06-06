@@ -160,23 +160,23 @@ MySQLQ1MenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
 let MySQLQ1MenuItem2 = document.getElementById("cmid1598");
 MySQLQ1MenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
 //Week 11 Coding Assignment
-let MySQLQ1MenuItem2 = document.getElementById("cmid1612");
-MySQLQ1MenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
-//Final Coding Project
-let MySQLQ1MenuItem3 = document.getElementById("cmid1620");
+let MySQLQ1MenuItem3 = document.getElementById("cmid1612");
 MySQLQ1MenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
-//Week 7 Quiz
-let MySQLQ1MenuItem4 = document.getElementById("cmid1565");
+//Final Coding Project
+let MySQLQ1MenuItem4 = document.getElementById("cmid1620");
 MySQLQ1MenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
-//Week 8 Quiz
-let MySQLQ1MenuItem5 = document.getElementById("cmid1577");
+//Week 7 Quiz
+let MySQLQ1MenuItem5 = document.getElementById("cmid1565");
 MySQLQ1MenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
-//Week 8 Research
-let MySQLQ1MenuItem6 = document.getElementById("cmid1576");
+//Week 8 Quiz
+let MySQLQ1MenuItem6 = document.getElementById("cmid1577");
 MySQLQ1MenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
-//Week 11 Research
-let MySQLQ1MenuItem7 = document.getElementById("cmid1609");
+//Week 8 Research
+let MySQLQ1MenuItem7 = document.getElementById("cmid1576");
 MySQLQ1MenuItem7.classList.add("block_grade_me_hide"); //hides the menu item
+//Week 11 Research
+let MySQLQ1MenuItem8 = document.getElementById("cmid1609");
+MySQLQ1MenuItem8.classList.add("block_grade_me_hide"); //hides the menu item
 //MySQL-Q1-2022 - End
 
 //spring boot - Begin
