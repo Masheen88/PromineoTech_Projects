@@ -17,43 +17,43 @@ Comment out entire sections wrapped similar to:
 //2022-05-Front End Program - End
 */
 
-//2022-05-Front End Program - Begin
-// Career Services Assignment 1 - LinkedIn Setup
-let FEPMenuItem1 = document.getElementById("cmid2938");
-if (FEPMenuItem1) {
-  FEPMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
-}
-//Career Services Assignment 1.5 - Github Profile
-let FEPMenuItem2 = document.getElementById("cmid2956");
-if (FEPMenuItem2) {
-  FEPMenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
-}
-//Career Services Assignment 2 - Tell Me About Yourself
-let FEPMenuItem3 = document.getElementById("cmid2974");
-if (FEPMenuItem3) {
-  FEPMenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
-}
-//Week 1 Research
-let FEPMenuItem4 = document.getElementById("cmid2937");
-if (FEPMenuItem4) {
-  FEPMenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
-}
-//Week 2 Research
-let FEPMenuItem5 = document.getElementById("cmid2955");
-if (FEPMenuItem5) {
-  FEPMenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
-}
-//Week 3 Research
-let FEPMenuItem6 = document.getElementById("cmid2973");
-if (FEPMenuItem6) {
-  FEPMenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
-}
-//Week 3 Coding Assignment Submission
-let FEPMenuItem7 = document.getElementById("cmid3329");
-if (FEPMenuItem7) {
-  FEPMenuItem7.classList.add("block_grade_me_hide"); //hides the menu item
-}
-//2022-05-Front End Program - End
+// //2022-05-Front End Program - Begin
+// // Career Services Assignment 1 - LinkedIn Setup
+// let FEPMenuItem1 = document.getElementById("cmid2938");
+// if (FEPMenuItem1) {
+//   FEPMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
+// }
+// //Career Services Assignment 1.5 - Github Profile
+// let FEPMenuItem2 = document.getElementById("cmid2956");
+// if (FEPMenuItem2) {
+//   FEPMenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
+// }
+// //Career Services Assignment 2 - Tell Me About Yourself
+// let FEPMenuItem3 = document.getElementById("cmid2974");
+// if (FEPMenuItem3) {
+//   FEPMenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
+// }
+// //Week 1 Research
+// let FEPMenuItem4 = document.getElementById("cmid2937");
+// if (FEPMenuItem4) {
+//   FEPMenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
+// }
+// //Week 2 Research
+// let FEPMenuItem5 = document.getElementById("cmid2955");
+// if (FEPMenuItem5) {
+//   FEPMenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
+// }
+// //Week 3 Research
+// let FEPMenuItem6 = document.getElementById("cmid2973");
+// if (FEPMenuItem6) {
+//   FEPMenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
+// }
+// //Week 3 Coding Assignment Submission
+// let FEPMenuItem7 = document.getElementById("cmid3329");
+// if (FEPMenuItem7) {
+//   FEPMenuItem7.classList.add("block_grade_me_hide"); //hides the menu item
+// }
+// //2022-05-Front End Program - End
 
 //front end tech - Begin
 // Week 1 Quiz
