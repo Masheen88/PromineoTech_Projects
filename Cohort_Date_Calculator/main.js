@@ -1,84 +1,106 @@
-let currentDate = new Date();
-console.log("currentDate:", currentDate);
+//get value from id cohortStartDatePicker
 
-const monthNames = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+function getCohortStartDate() {
+  let cohortStartDateValue = document.querySelector(`input[type="date"]`).value;
+  console.log("cohortStartData:", cohortStartDateValue);
 
-console.log(
-  "The current Date is " + monthNames[currentDate.getMonth()],
-  currentDate.getDate().toString(),
-  currentDate.getFullYear().toString()
-);
+  //split cohortStartDateValue into array
+  let cohortStartMonthValue = cohortStartDateValue.slice(5, 7);
+  console.log("cohortStartData-Month:", cohortStartMonthValue);
+  let cohortStartDayValue = cohortStartDateValue.slice(8, 10);
+  console.log("cohortStartData-Day:", cohortStartDayValue);
+  let cohortStartYearValue = cohortStartDateValue.slice(0, 4);
+  console.log("cohortStartData-Year:", cohortStartYearValue);
 
-let divDate = document.getElementById("currentDate");
-let divCohort = document.getElementById("cohortDate");
+  return [cohortStartMonthValue, cohortStartDayValue, cohortStartYearValue];
+}
 
-divDate.innerHTML = `The current Date is ${
-  monthNames[currentDate.getMonth()]
-} ${currentDate.getDate()}, ${currentDate.getFullYear()}`;
+weekArray = 0;
+let week0 = [];
+let week1 = [];
+let week2 = [];
 
-function getCohortClassDates() {
-  let newDate = new Date();
-  let newDate2 = new Date();
-  let newDate3 = new Date();
-  let time = getDatePicker();
-  console.log("time:", time);
+function calendar() {
+  let cohortStartDate = getCohortStartDate();
+  console.log("cohortStartDate before Loop: ", cohortStartDate);
+  console.log(
+    parseInt(cohortStartDate[0]),
+    parseInt(cohortStartDate[1]),
+    parseInt(cohortStartDate[2])
+  );
+  let initialdate = 0;
+  //loop 120 days (18 weeks) weeks from cohorotStartDate
+  for (let j = 0; j <= 18; j++) {
+    for (let i = 0; i < 126; i++) {
+      console.log(`\n i: `, i, "Begginning of loop!");
 
-  console.log("newDate:", newDate);
+      let cohortGetDate = new Date( //create new date object
+        parseInt(cohortStartDate[2]), //year
+        parseInt(cohortStartDate[0] - 1), //month
+        parseInt(cohortStartDate[1]) + initialdate //day
+      );
+      //   console.log("testing", cohortGetDate);
 
-  //Loops through the 18 week class start dates
-  for (let i = 0; i < 18; i++) {
-    let cohortClassDate = new Date();
-    cohortClassDate.setDate(cohortClassDate.getDate() + i * 7);
+      let stringifiedcorhortGetDate = cohortGetDate;
+      console.log("cohortGetDate Start Day: ", stringifiedcorhortGetDate);
+      let diff =
+        stringifiedcorhortGetDate.getDate() -
+        stringifiedcorhortGetDate.getDay() +
+        (stringifiedcorhortGetDate.getDay() === 0 ? -6 : 1);
+      let cohortGetDateStartOfWeek = new Date(
+        stringifiedcorhortGetDate.setDate(diff)
+      );
 
-    newDate2.setDate(time[1]); //Month
-    newDate.setDate(time[1] + i * 7); //Day
-    newDate3.setDate(time[1]); //Year
+      //returns the date of the start of the week
+      console.log("cohortGetDateStartOfWeek: ", cohortGetDateStartOfWeek);
 
-    let dateTag = document.createElement("p");
-    dateText = document.createTextNode(`
-    Week ${i + 1}:
-    ${monthNames[cohortClassDate.getMonth()]}
-    ${newDate.getDate()}
-    ${newDate3.getFullYear()}
-    `);
-    dateTag.appendChild(dateText);
-    divCohort.appendChild(dateTag);
+      //return the date of the end of the week
+      let cohortGetDateEndOfWeek = new Date(
+        cohortGetDateStartOfWeek.setDate(cohortGetDateStartOfWeek.getDate() + 6)
+      );
+      console.log("cohortGetDateEndOfWeek: ", cohortGetDateEndOfWeek);
+
+      let week0 = document.getElementById("week0");
+      let week0data = document.createElement("div");
+      week0data.innerHTML = `${cohortGetDateStartOfWeek.toLocaleDateString()} - ${cohortGetDateEndOfWeek.toLocaleDateString()}`;
+      week0.appendChild(week0data);
+
+      console.log(`week: ${"week" + [weekArray]}`);
+
+      //if date is between cohortStartDate and cohortGetDateEndOfWeek add to week array
+
+      if (
+        cohortGetDateStartOfWeek >= cohortStartDate &&
+        cohortGetDateStartOfWeek <= cohortGetDateEndOfWeek
+      ) {
+        "week" + [weekArray].push(cohortGetDateStartOfWeek);
+        console.log(i, ` testing week number:${"week" + [weekArray]}`);
+      }
+
+      initialdate++; //increment initialdate by 1
+      console.log(`Week ${i}: Front End Orientation:`, cohortGetDate);
+      //get day from slice of cohortGetDate
+      let cohortGetDay = cohortGetDate.getDate();
+
+      //split cohortGetDate into array
+      let cohortGetMonthValue = cohortGetDate.getMonth() + 1;
+      console.log("cohortGetData-Month:", cohortGetMonthValue);
+      let cohortGetDayValue = cohortGetDate.getDate();
+      console.log("cohortGetData-Day:", cohortGetDayValue);
+      let cohortGetYearValue = cohortGetDate.getFullYear();
+      console.log("cohortGetData-Year:", cohortGetYearValue);
+
+      cohortGetDateArray = [
+        cohortGetMonthValue,
+        cohortGetDayValue,
+        cohortGetYearValue,
+      ];
+    }
+    weekArray++;
+    initialdate = 0;
   }
+
+  console.log("week0: ", week0);
 }
 
-//
-
-function getDatePicker() {
-  var datePicker = document.getElementById("datePicker").value;
-  /*  console.log(
-    "Month:",
-    parseInt(datePicker.slice(5).slice(0, 2)),
-    `\n`,
-    "Day:",
-    parseInt(datePicker.slice(8)),
-    `\n`,
-    "Year:",
-    parseInt(datePicker.slice(0, 4))
-  ); */
-
-  let datePickerValue = [
-    parseInt(datePicker.slice(5).slice(0, 2)), //Month
-    parseInt(datePicker.slice(8)), //Day
-    parseInt(datePicker.slice(0, 4)), //Year
-  ];
-  //  console.log("datePickerValue:", datePickerValue);
-  return datePickerValue;
-}
+///TESTIN

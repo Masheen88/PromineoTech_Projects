@@ -7,11 +7,17 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- display a grid with 126 cells-->
+
     <h1>Cohort Date Calculator</h1>
-    <div id="currentDate"></div>
+    <div id="cohortCalendar"></div>
     <br />
-    <input id="datePicker" type="date" onchange="getDatePicker()" />
-    <button onclick="getCohortClassDates();this.onclick=null">Get Dates</button>
+    <div id="calendar">
+      <div id="week0"></div>
+    </div>
+    <!-- input date picker -->
+    <label for="date">Enter a date:</label>
+    <input id="cohortStartDatePicker date" type="date" onchange="calendar()" />
 
     <div id="cohortDate"></div>
     <script src="main.js"></script>
