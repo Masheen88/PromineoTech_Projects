@@ -53,6 +53,7 @@ let FEPMenuItem7 = document.getElementById("cmid3329");
 if (FEPMenuItem7) {
   FEPMenuItem7.classList.add("block_grade_me_hide"); //hides the menu item
 }
+
 //2022-05-Front End Program - End
 
 //front end tech - Begin
@@ -94,6 +95,7 @@ let FETQ1MenuItem2 = document.getElementById("cmid1246");
 if (FETQ1MenuItem2) {
   FETQ1MenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
 }
+
 //Week 9 Coding Assignment
 let FETQ1MenuItem3 = document.getElementById("cmid1257");
 if (FETQ1MenuItem3) {
@@ -223,6 +225,11 @@ let JSQ1MenuItem5 = document.getElementById("cmid1214");
 if (JSQ1MenuItem5) {
   JSQ1MenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
 }
+//Week 3 Codeing Assignment
+let JSQ1MenuItem6 = document.getElementById("cmid1185");
+if (JSQ1MenuItem6) {
+  JSQ1MenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
+}
 //JS-Q1-2022 - End
 
 //MySQL - Begin
@@ -283,6 +290,16 @@ if (MySQLQ1MenuItem9) {
 let MySQLQ1MenuItem10 = document.getElementById("cmid1609");
 if (MySQLQ1MenuItem10) {
   MySQLQ1MenuItem10.classList.add("block_grade_me_hide"); //hides the menu item
+}
+//Week 9 Coding Assignment
+let MySQLQ1MenuItem11 = document.getElementById("cmid1586");
+if (MySQLQ1MenuItem11) {
+  MySQLQ1MenuItem11.classList.add("block_grade_me_hide"); //hides the menu item
+}
+// Week 9 Quiz
+let MySQLQ1MenuItem12 = document.getElementById("cmid1588");
+if (MySQLQ1MenuItem12) {
+  MySQLQ1MenuItem12.classList.add("block_grade_me_hide"); //hides the menu item
 }
 //MySQL-Q1-2022 - End
 

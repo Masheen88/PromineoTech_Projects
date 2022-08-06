@@ -17,43 +17,73 @@ Comment out entire sections wrapped similar to:
 //2022-05-Front End Program - End
 */
 
-// //2022-05-Front End Program - Begin
-// // Career Services Assignment 1 - LinkedIn Setup
-// let FEPMenuItem1 = document.getElementById("cmid2938");
-// if (FEPMenuItem1) {
-//   FEPMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
-// }
-// //Career Services Assignment 1.5 - Github Profile
-// let FEPMenuItem2 = document.getElementById("cmid2956");
-// if (FEPMenuItem2) {
-//   FEPMenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
-// }
-// //Career Services Assignment 2 - Tell Me About Yourself
-// let FEPMenuItem3 = document.getElementById("cmid2974");
-// if (FEPMenuItem3) {
-//   FEPMenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
-// }
-// //Week 1 Research
-// let FEPMenuItem4 = document.getElementById("cmid2937");
-// if (FEPMenuItem4) {
-//   FEPMenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
-// }
-// //Week 2 Research
-// let FEPMenuItem5 = document.getElementById("cmid2955");
-// if (FEPMenuItem5) {
-//   FEPMenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
-// }
-// //Week 3 Research
-// let FEPMenuItem6 = document.getElementById("cmid2973");
-// if (FEPMenuItem6) {
-//   FEPMenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
-// }
-// //Week 3 Coding Assignment Submission
-// let FEPMenuItem7 = document.getElementById("cmid3329");
-// if (FEPMenuItem7) {
-//   FEPMenuItem7.classList.add("block_grade_me_hide"); //hides the menu item
-// }
-// //2022-05-Front End Program - End
+//May 2022 auto graded assignments - Begin
+
+// Week 3: Coding Asssignment Submission
+letMay2022MenuItem1 = document.querySelector("#cmid3329");
+letMay2022MenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 7: Quiz
+letMay2022MenuItem2 = document.querySelector("#cmid3195");
+letMay2022MenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
+
+//Week 7: Coding Assignment Submission
+letMay2022MenuItem3 = document.querySelector("#cmid4586");
+letMay2022MenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
+
+//Week 7: Research
+letMay2022MenuItem4 = document.querySelector("#cmid4588");
+letMay2022MenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
+
+//Week 7: Career Services Submission
+letMay2022MenuItem5 = document.querySelector("#cmid4590");
+letMay2022MenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 8: Quiz
+letMay2022MenuItem3 = document.querySelector("#cmid3207");
+letMay2022MenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 8: Coding Assignment Submission
+letMay2022MenuItem4 = document.querySelector("#cmid4591");
+letMay2022MenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 8: Research
+letMay2022MenuItem5 = document.querySelector("#cmid4593");
+letMay2022MenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 9: Quiz
+letMay2022MenuItem4 = document.querySelector("#cmid3221");
+letMay2022MenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 9: Coding Assignment Submission
+letMay2022MenuItem5 = document.querySelector("#cmid4594");
+letMay2022MenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 9: Research
+letMay2022MenuItem6 = document.querySelector("#cmid4596");
+letMay2022MenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 9: Career Services Submission
+letMay2022MenuItem7 = document.querySelector("#cmid4595");
+letMay2022MenuItem7.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 10: Quiz
+letMay2022MenuItem5 = document.querySelector("#cmid3234");
+letMay2022MenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 10: Research
+letMay2022MenuItem6 = document.querySelector("#cmid4600");
+letMay2022MenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 10: Coding Assignment Submission
+letMay2022MenuItem7 = document.querySelector("#cmid4599");
+letMay2022MenuItem7.classList.add("block_grade_me_hide"); //hides the menu item
+
+// Week 11: Quiz
+letMay2022MenuItem6 = document.querySelector("#cmid3247");
+letMay2022MenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
+
+// May 2022 auto graded assignments - End
 
 //front end tech - Begin
 // Week 1 Quiz
@@ -183,10 +213,16 @@ if (FETQ1MenuItem19) {
 
 //JV-Q1-2022 - Begin
 // Final Exam
-let JVQ1MenuItem1 = document.getElementById("cmid1481");
+let JVQ1MenuItem1 = document.getElementById("cmid1480");
 if (JVQ1MenuItem1) {
   JVQ1MenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
 }
+//Toggle Section Week 6: Final Coding Project
+let JVQ1MenuItem2 = document.getElementById("cmid1482");
+if (JVQ1MenuItem2) {
+  JVQ1MenuItem2.classList.add("block_grade_me_hide"); //hides the menu item
+}
+
 //JV-Q1-2022 - End
 
 //Javascript - Begin
@@ -222,6 +258,21 @@ if (JSQ1MenuItem4) {
 let JSQ1MenuItem5 = document.getElementById("cmid1214");
 if (JSQ1MenuItem5) {
   JSQ1MenuItem5.classList.add("block_grade_me_hide"); //hides the menu item
+}
+//Week 3 Codeing Assignment
+let JSQ1MenuItem6 = document.getElementById("cmid1185");
+if (JSQ1MenuItem6) {
+  JSQ1MenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
+}
+//Week 4 Research
+let JSQ1MenuItem7 = document.getElementById("cmid3360");
+if (JSQ1MenuItem7) {
+  JSQ1MenuItem7.classList.add("block_grade_me_hide"); //hides the menu item
+}
+//Week 5 Research
+let JSQ1MenuItem8 = document.getElementById("cmid3361");
+if (JSQ1MenuItem8) {
+  JSQ1MenuItem8.classList.add("block_grade_me_hide"); //hides the menu item
 }
 //JS-Q1-2022 - End
 
@@ -284,6 +335,16 @@ let MySQLQ1MenuItem10 = document.getElementById("cmid1609");
 if (MySQLQ1MenuItem10) {
   MySQLQ1MenuItem10.classList.add("block_grade_me_hide"); //hides the menu item
 }
+//Week 9 Coding Assignment
+let MySQLQ1MenuItem11 = document.getElementById("cmid1586");
+if (MySQLQ1MenuItem11) {
+  MySQLQ1MenuItem11.classList.add("block_grade_me_hide"); //hides the menu item
+}
+// Week 9 Quiz
+let MySQLQ1MenuItem12 = document.getElementById("cmid1588");
+if (MySQLQ1MenuItem12) {
+  MySQLQ1MenuItem12.classList.add("block_grade_me_hide"); //hides the menu item
+}
 //MySQL-Q1-2022 - End
 
 //spring boot - Begin
@@ -310,19 +371,22 @@ let SBQ1MenuItem3 = document.getElementById("cmid1531");
 if (SBQ1MenuItem3) {
   SBQ1MenuItem3.classList.add("block_grade_me_hide"); //hides the menu item
 }
+
 //Career Services Assignment 8 - Apply for Jobs
 let SBQ1MenuItem4 = document.getElementById("cmid1521");
 if (SBQ1MenuItem4) {
   SBQ1MenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
 }
+
+//Week 18: Final Project Submission
+let SBQ1MenuItem5 = document.getElementById("cmid1552");
+if (SBQ1MenuItem5) {
+  SBQ1MenuItem4.classList.add("block_grade_me_hide"); //hides the menu item
+}
 //SB-Q1-2022 - End
 
 //React - Begin
-//Week 3 Coding Assignment
-let ReactMenuItem1 = document.getElementById("cmid25");
-if (ReactMenuItem1) {
-  ReactMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
-}
+
 //Final Project
 let ReactMenuItem2 = document.getElementById("cmid35");
 if (ReactMenuItem2) {
@@ -348,6 +412,11 @@ let ReactMenuItem6 = document.getElementById("cmid42");
 if (ReactMenuItem6) {
   ReactMenuItem6.classList.add("block_grade_me_hide"); //hides the menu item
 }
+
+//Week 15 Coding Assignment
+let ReactMenuItem7 = document.getElementById("cmid25");
+ReactMenuItem1.classList.add("block_grade_me_hide"); //hides the menu item
+
 //React - End
 
 //RT-Q1-2022 - Begin
