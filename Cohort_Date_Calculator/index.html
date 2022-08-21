@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="dark-mode">
+    <!-- enable dark mode -->
+    <input type="checkbox" id="dark-mode" checked onclick="toggleDarkMode()" />
+    <!-- enable dark mode -->
+
     <!-- display a grid with 126 cells-->
 
     <h1>Cohort Date Calculator</h1>
     <div id="cohortCalendar"></div>
     <br />
-    <div id="calendar">
-      <div id="week0"></div>
-    </div>
+
     <!-- input date picker -->
     <label for="date">Enter a date:</label>
     <input id="cohortStartDatePicker date" type="date" onchange="calendar()" />
+    <div id="cohort-start-date"></div>
+    <div id="cohort-end-date"></div>
+    <div class="container">
+      <div id="calendar"></div>
+    </div>
 
-    <div id="cohortDate"></div>
     <script src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,57 @@
+/* Dark mode snippet - Begin */
+
+.dark-mode {
+  background-color: #1e1e1e;
+  /* color: white; */
+  filter: invert(100%);
+  mix-blend-mode: difference;
+}
+/* Dark mode snippet - End */
+
+.today {
+  color: rgb(0, 102, 255);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.start-date {
+  color: green;
+  text-decoration: underline;
+}
+
+.end-date {
+  color: red;
+  text-decoration: underline;
+}
+
+/* center grid to page */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* add a square to date */
+.date {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "date date" "date date";
+  grid-gap: 1px;
+  justify-items: center;
+  align-items: center;
+
+  /* align items inside the grid to border */
+
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 90%;
+  height: 90%;
+  padding-bottom: 20px;
+  /* margin-bottom: 10px; */
+
+  /* margin-right: 5px; */
+}
