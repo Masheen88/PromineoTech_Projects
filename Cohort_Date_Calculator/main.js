@@ -125,13 +125,14 @@ function calendar() {
       <div>${date.toLocaleString("en-us", {
         weekday: "long",
       })} - ${dateString}</div>
-
       <br />
-      <div>
+      <div class=date-note-field>
       <textarea class="notes" placeholder="Notes would go to API"></textarea>
       </div>
       </div>
       `;
+      //notes should extend the full width of the dates div
+      cell.querySelector(".notes").style.width = "95%";
 
       // if the date is the current date, add a class of "today"
       if (date.getFullYear() == new Date().getFullYear()) {
@@ -164,3 +165,30 @@ function calendar() {
 
   console.log(`\nEnd Calendar Function`);
 }
+
+//ajax get request
+function getRequest(url) {
+  return new Promise((resolve, reject) => {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+        resolve(xhr.response);
+      } else {
+        reject(xhr.statusText);
+      }
+    };
+    xhr.onerror = () => {
+      reject(xhr.statusText);
+    };
+    xhr.send();
+  });
+}
+
+//caledar project it
+// matts-calendar-api
+// const URL = `https://calendar.google.com/calendar/r/settings/basic`;
+
+//api 115165176908-agc1bgdftbu1efh5v3epd2hc5tfou9kr.apps.googleusercontent.com
+// client id 115165176908-agc1bgdftbu1efh5v3epd2hc5tfou9kr.apps.googleusercontent.com
+//sec 115165176908-agc1bgdftbu1efh5v3epd2hc5tfou9kr.apps.googleusercontent.com
