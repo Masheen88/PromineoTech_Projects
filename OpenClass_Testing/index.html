@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>OpenClass Testing</h1>
+    <!-- line 16 forwards id 'file' which is hidden to id "loadFileXml" to allow for button customization -->
+    <input
+      type="button"
+      id="loadFileXml"
+      value="Custom Input Name"
+      onclick="document.getElementById('file').click();"
+    />
+
+    <input type="file" style="display: none" id="file" name="file" />
+    <!-- <script src="./openClass.js"></script> -->
+    <script src="./bundle.js"></script>
+  </body>
+</html>

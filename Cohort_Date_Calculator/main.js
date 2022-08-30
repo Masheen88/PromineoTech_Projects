@@ -1,3 +1,8 @@
+const GSheetReader = require("g-sheets-api");
+
+const gSheetsAPIURL =
+  "https://docs.google.com/spreadsheets/d/1aK_jYKyW9mNlvOY11X6JWQZuIhWC_1qnZn0rI_9nXQs/edit?usp=sharing";
+
 // Dark mode snippet - Begin
 function toggleDarkMode() {
   var checkbox = document.getElementById("dark-mode");
