@@ -1,0 +1,29 @@
+fieldset#id_gradeheader {
+  width: 850px !important;
+}
+
+.drawingcanvas {
+  filter: invert(75%) !important;
+}
+
+.path-mod-assign [data-region="grade-panel"] {
+  left: 60% !important;
+  width: 40% !important;
+  zoom: 0.85 !important;
+}
+
+.path-mod-assign [data-region="review-panel"] {
+  width: 60% !important;
+}
+
+/* media query 1500px or less */
+@media screen and (max-width: 1500px) {
+  .path-mod-assign [data-region="grade-panel"] {
+    left: 50% !important;
+    width: 50% !important;
+    zoom: 0.85 !important;
+  }
+  .path-mod-assign [data-region="review-panel"] {
+    width: 50% !important;
+  }
+}
