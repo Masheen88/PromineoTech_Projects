@@ -140,8 +140,8 @@ function frontEndGrading() {
       (UnitFinalExamPercent / CourseTotalPercent) * CoursePointTotal;
     UnitFinalExamPointsPerAssignment = UnitFinalExamPoints / totalUnitFinalExam;
     OtherPoints = (OtherPercent / CourseTotalPercent) * CoursePointTotal;
-    totalOtherQuizPoints = OtherPoints / 2 / 8; //! 8 quizzes
-    totalOtherClassAttendancePoints = OtherPoints / 4 / 16; //! 16 class attendance days
+    totalOtherQuizPoints = OtherPoints / 2 / 7; //! 7 quizzes
+    totalOtherClassAttendancePoints = OtherPoints / 4 / 17; //! 16 class attendance days
     totalOtherLinkedInPostsPoints = OtherPoints / 4 / 18; //! 18 LinkedIn posts
     totalLabsPoints = 0; //? Total Labs = 0
     AssignmentArray = [

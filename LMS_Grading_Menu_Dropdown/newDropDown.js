@@ -6,11 +6,19 @@ let React_Q1_2022 = document.getElementById("courseid34");
 let Orientation_FE = document.getElementById("courseid40");
 let FET_Q1_2022 = document.getElementById("courseid33");
 let front_end_tech = document.getElementById("courseid3");
+let FE_May_2022 = document.getElementById("courseid50");
 
 function HideStuff(hideIt) {
   //check to see if hideIt has a div inside of it with the attribute tabindex="0"
   //if it does, then add a class of "open" to it and style display none to hideIt
   //if it doesn't, then do nothing
+
+  //if hideIt is null
+  if (hideIt == null) {
+    //do nothing
+    return;
+  }
+
   if (hideIt.querySelector('[tabindex="0"]')) {
     console.log("Hidden", hideIt);
     hideIt.querySelector('[tabindex="0"]').classList.add("open");
@@ -18,42 +26,52 @@ function HideStuff(hideIt) {
   }
 }
 
+console.log("MySQL");
 HideStuff(MySQL);
+console.log("javascript");
 HideStuff(javascript);
+console.log("js_Q1_2022");
 HideStuff(js_Q1_2022);
+console.log("React");
 HideStuff(React);
+console.log("React_Q1_2022");
 HideStuff(React_Q1_2022);
+console.log("Orientation_FE");
 HideStuff(Orientation_FE);
+console.log("FET_Q1_2022");
 HideStuff(FET_Q1_2022);
+console.log("front_end_tech");
 HideStuff(front_end_tech);
+console.log("FE_May_2022");
+// HideStuff(FE_May_2022);
 
 // if div class grademe-mod-name has text Week 3: then add style of display none to the class
 
 let AutoGradedAssignments = [
-  "Week 1: Research", // autograded
-  //   "Week 1 Quiz",
-  "Week 1 Coding Assignment",
+  "Week 0: Coding Assignment - Submission", //autograded
+  "Week 0: Schedule - Submission", //autograded
+  "Week 1: Research", //autograded
+  "Week 1 Coding Assignment", //autograded
   "Week 1: Career Services Assignment - Submission", //autograded
   "Week 1: Career Services - Submission", //autograded
   "Week 1: Coding Assignment Submission", //autograded
+  "Week 1 Quiz", //autograded
   "Week 2: Research", //autograded
   "Week 2: Career Services Assignment - Submission", //autograded
-  //   "Week 2 Coding Assignment",
   "Week 3: Research", //autograded
   "Week 3: Research Submission", //autograded
   "Week 3: Career Services Assignment - Submission", //autograded
-  //   "Week 3: Coding Assignment",
   "Week 4: Research", //autograded
   //   "Week 4 Coding Assignment",
   "Week 5: Research", //autograded
   "Week 4: Quiz", //autograded
   "Week 5: Coding Assignment - Submission", //autograded
-  "Week 5: Coding Assignment",
+  "Week 5: Coding Assignment", //autograded
   "Week 5: Career Services Submission", //autograded
   //   "Week 5: Quiz",
   //   "Week 5 Coding Assignment",
   //   "Week 6: Research",
-  "Week 7: Research", // autograded
+  "Week 7: Research", //autograded
   "Week 7: Career Services Submission", //autograded
   "Week 7: Career Services - Submission", //autograded
   "Week 7: Coding Assignment Submission", //autograded
@@ -76,7 +94,9 @@ let AutoGradedAssignments = [
   "Week 10: Coding Assignment Submission", //autograded
   //   "Week 10: Coding Assignment",
   "Week 10: Quiz", //autograded
+  "Week 10 Quiz", //autograded
   //   "Week 10 Quiz",
+  "Week 11: Research",
   "Week 11: Quiz", //autograded
   //   "Week 11: Coding Assignment",
   "Week 13: Career Services Submission", //autograded
@@ -85,21 +105,20 @@ let AutoGradedAssignments = [
   //   "Week 13: Coding Assignment",
   "Week 13: Coding Assignment - Submission", //autograded
   //   "Week 13 Coding Assignment",
-  "Week 13: Research", // autograded
-  "Week 14: Research", // autograded
+  "Week 13: Research", //autograded
+  "Week 14: Research", //autograded
   "Week 14: Coding Assignment Submission", //autograded
   "Week 14: Coding Assignment - Submission", //autograded
   //   "Week 14: Coding Assignment",
-  "Week 15: Research", // autograded
+  "Week 15: Research", //autograded
   "Week 15: Career Services Submission", //autograded
   "Week 15: Career Services - Submission", //autograded
   "Week 15: Career Services Assignment - Submission", //autograded
   "Week 15: Coding Assignment Submission", //autograded
   "Week 15: Coding Assignment - Submission", //autograded
   "Week 16: Research", //autograded
-  //   "Week 17: Research",
-  "Week 0: Coding Assignment - Submission", //autograded
-  "Week 0: Schedule - Submission", //autograded
+  "Week 17: Research", //autograded
+  "Week 17: Career Services Assignment - Submission", //autograded
 ];
 
 for (let i = 0; i < AutoGradedAssignments.length; i++) {
@@ -114,13 +133,15 @@ for (let i = 0; i < AutoGradedAssignments.length; i++) {
     }
   }
 
+  /*
   //if the parent div has a class of "matthew" then add a style of display none with important tag
-  //   if (document.querySelector(".matthew")) {
-  //     let matthew = document.querySelector(".dd-wrap.matthew");
-  //     console.log("you found a matthew:", matthew);
-  //     // add a style to matthew after page has fully loaded
-  //     window.addEventListener("load", function () {
-  //       matthew.style.display = "none !important";
-  //     });
-  //   }
+  if (document.querySelector(".matthew")) {
+    let matthew = document.querySelector(".dd-wrap.matthew");
+    console.log("you found a matthew:", matthew);
+    // add a style to matthew after page has fully loaded
+    window.addEventListener("load", function () {
+      matthew.style.display = "none !important";
+    });
+  }
+*/
 }
