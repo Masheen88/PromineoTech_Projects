@@ -1,13 +1,15 @@
-let MySQL = document.getElementById("courseid8");
-
-let javascript = document.getElementById("courseid4");
-let js_Q1_2022 = document.getElementById("courseid32");
-let React = document.getElementById("courseid2");
-let React_Q1_2022 = document.getElementById("courseid34");
-let Orientation_FE = document.getElementById("courseid40");
-let FET_Q1_2022 = document.getElementById("courseid33");
-let front_end_tech = document.getElementById("courseid3");
-let FE_May_2022 = document.getElementById("courseid50");
+let MySQL = document.getElementById("courseid8"); //BE
+let SB_Q1_2022 = document.getElementById("courseid36"); //BE
+let javascript = document.getElementById("courseid4"); //FE
+let js_Q1_2022 = document.getElementById("courseid32"); //FE
+let React = document.getElementById("courseid2"); //FE
+let React_Q1_2022 = document.getElementById("courseid34"); //FE
+let Orientation_FE = document.getElementById("courseid40"); //FE
+let FET_Q1_2022 = document.getElementById("courseid33"); //FE
+let front_end_tech = document.getElementById("courseid3"); //FE
+let FE_May_2022 = document.getElementById("courseid50"); //FE
+let FE_July_2022 = document.getElementById("courseid58"); //FE
+let FE_Nov_2022 = document.getElementById("courseid75"); //FE
 
 let AutoGradedAssignments = [
   "Week 0: Coding Assignment - Submission", //autograded
@@ -17,7 +19,7 @@ let AutoGradedAssignments = [
   "Week 1: Research", //autograded
   "Week 1 Coding Assignment", //autograded
   "Week 1: Career Services Assignment - Submission", //autograded
-  "Week 1: Career Services Assignment Submission -- LinkedIn Profile",
+  "Week 1: Career Services Assignment Submission -- LinkedIn Profile", //autograded
   "Week 1: Career Services - Submission", //autograded
   "Week 1: Coding Assignment Submission", //autograded
   "Week 1 Quiz", //autograded
@@ -120,6 +122,8 @@ function HideStuff(hideIt) {
 
 console.log("MySQL");
 HideStuff(MySQL);
+console.log("SB_Q1_2022");
+HideStuff(SB_Q1_2022);
 console.log("javascript");
 HideStuff(javascript);
 console.log("js_Q1_2022");
@@ -136,3 +140,26 @@ console.log("front_end_tech");
 HideStuff(front_end_tech);
 console.log("FE_May_2022");
 HideStuff(FE_May_2022);
+console.log("FE_July_2022");
+HideStuff(FE_July_2022);
+console.log("FE_Nov_2022");
+HideStuff(FE_Nov_2022);
+
+//Auto Collapse Courses
+let BackEndCourses = [MySQL, SB_Q1_2022];
+// if BackEndCourses is null do nothing else do something.
+if (BackEndCourses == null) {
+  //do nothing
+} else {
+  //if element contains class gradeMeCurriculum and BackEndCourses is not null then collapse it
+  for (let i = 0; i < BackEndCourses.length; i++) {
+    console.log(BackEndCourses[i].parentElement);
+    if (BackEndCourses[i] != null) {
+      if (
+        BackEndCourses[i].parentElement.classList.contains("gradeMeCurriculum")
+      ) {
+        //TODO: exclude dt elements, elements with property tabindex="0", a tag elements that include innerTexttext from BackEndCourses array
+      }
+    }
+  }
+}
