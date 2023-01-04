@@ -9,7 +9,10 @@ let FET_Q1_2022 = document.getElementById("courseid33"); //FE
 let front_end_tech = document.getElementById("courseid3"); //FE
 let FE_May_2022 = document.getElementById("courseid50"); //FE
 let FE_July_2022 = document.getElementById("courseid58"); //FE
-let FE_Nov_2022 = document.getElementById("courseid75"); //FE
+let FE_Sept_2022 = document.getElementById("courseid75"); //FE
+let FE_Nov_2022 = document.getElementById("courseid80"); //FE
+
+//TODO ??add badges to each Curriculum section that displays how many assignments total need to be graded.
 
 let AutoGradedAssignments = [
   "Week 0: Coding Assignment - Submission", //autograded
@@ -31,20 +34,22 @@ let AutoGradedAssignments = [
   "Week 3: Career Services Assignment - Submission", //autograded
   "Week 3: Career Services Assignment Submission -- Elevator Pitch", //autograded
   "Week 4: Research", //autograded
+  "Week 4: Quiz", //autograded
   //   "Week 4 Coding Assignment",
   "Week 5: Research", //autograded
-  "Week 4: Quiz", //autograded
   "Week 5: Coding Assignment - Submission", //autograded
   "Week 5: Coding Assignment Submission", //autograded
   "Week 5: Coding Assignment", //autograded
   "Week 5: Career Services Submission", //autograded
   "Week 5: Career Services Assignment Submission -- JavaScript Flash Cards", //autograded
+  "Week 5: Quiz", //autograded
   //   "Week 5: Quiz",
   //   "Week 5 Coding Assignment",
   //   "Week 6: Research",
   "Week 7: Research", //autograded
   "Week 7: Career Services Submission", //autograded
   "Week 7: Career Services - Submission", //autograded
+  "Week 7: Career Services Assignment Submission -- Soft Skill Interviewing", //autograded
   "Week 7: Coding Assignment Submission", //autograded
   "Week 7: Coding Assignment - Submission", //autograded
   //   "Week 7: Coding Assignment",
@@ -57,9 +62,11 @@ let AutoGradedAssignments = [
   "Week 8: Quiz", //autograded
   "Week 9: Research", //autograded
   "Week 9: Career Services Submission", //autograded
+  "Week 9: Career Services Assignment Submission -- Attend a Meetup", //autograded
   "Week 9: Coding Assignment Submission", //autograded
   //   "Week 9: Coding Assignment",
   "Week 9: Quiz", //autograded
+  "Week 9 Quiz", //autograded
   //   "Week 9 Quiz",
   "Week 10: Research", //autograded
   "Week 10: Coding Assignment Submission", //autograded
@@ -68,7 +75,9 @@ let AutoGradedAssignments = [
   "Week 10 Quiz", //autograded
   //   "Week 10 Quiz",
   "Week 11: Research",
+  "Week 11: Career Services Assignment Submission -- API Flash Cards", //autograded
   "Week 11: Quiz", //autograded
+  "Week 11 Quiz", //autograded
   "Week 11: Coding Assignment Submission", //autograded
   "Week 11: Career Services Submission", //autograded
   //   "Week 11: Coding Assignment",
@@ -103,7 +112,7 @@ function HideStuff(hideIt) {
   }
 
   parentElement = hideIt.parentElement;
-  console.log("parentElement:", parentElement);
+  // console.log("parentElement:", parentElement); //logs all the parent elements to the console
 
   //assign a class to the parent element
   parentElement.classList.add("gradeMeCurriculum");
@@ -142,6 +151,8 @@ console.log("FE_May_2022");
 HideStuff(FE_May_2022);
 console.log("FE_July_2022");
 HideStuff(FE_July_2022);
+console.log("FE_Sept_2022");
+HideStuff(FE_Sept_2022);
 console.log("FE_Nov_2022");
 HideStuff(FE_Nov_2022);
 
@@ -153,7 +164,7 @@ if (BackEndCourses == null) {
 } else {
   //if element contains class gradeMeCurriculum and BackEndCourses is not null then collapse it
   for (let i = 0; i < BackEndCourses.length; i++) {
-    console.log(BackEndCourses[i].parentElement);
+    // console.log(BackEndCourses[i].parentElement); //parentElement of BackEndCourses
     if (BackEndCourses[i] != null) {
       if (
         BackEndCourses[i].parentElement.classList.contains("gradeMeCurriculum")
