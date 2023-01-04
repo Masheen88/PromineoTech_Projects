@@ -1,18 +1,18 @@
-const GSheetReader = require("g-sheets-api");
+// const GSheetReader = require("g-sheets-api");
 
-const gSheetsAPIURL =
-  "https://docs.google.com/spreadsheets/d/1aK_jYKyW9mNlvOY11X6JWQZuIhWC_1qnZn0rI_9nXQs/edit?usp=sharing";
+// const gSheetsAPIURL =
+//   "https://docs.google.com/spreadsheets/d/1aK_jYKyW9mNlvOY11X6JWQZuIhWC_1qnZn0rI_9nXQs/edit?usp=sharing";
 
-// Dark mode snippet - Begin
-function toggleDarkMode() {
-  var checkbox = document.getElementById("dark-mode");
-  var body = document.getElementsByTagName("body")[0];
-  if (checkbox.checked) {
-    body.classList.add("dark-mode");
-  } else {
-    body.classList.remove("dark-mode");
-  }
-}
+// // Dark mode snippet - Begin
+// function toggleDarkMode() {
+//   var checkbox = document.getElementById("dark-mode");
+//   var body = document.getElementsByTagName("body")[0];
+//   if (checkbox.checked) {
+//     body.classList.add("dark-mode");
+//   } else {
+//     body.classList.remove("dark-mode");
+//   }
+// }
 // Dark mode snippet - End
 
 //Function to get the start date of a cohort
@@ -21,6 +21,7 @@ function getCohortStartDate() {
 
   // Gets the month, day, and year from the calendar picker
   let cohortStartDateValue = document.querySelector(`input[type="date"]`).value;
+  console.log(`cohortStartDateValue:`, cohortStartDateValue);
   // console.log("cohortStartDateData:", cohortStartDateValue);
 
   //convert cohortStateDateValue to a date object
